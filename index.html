@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Invitación al matrimonio de Iván y Camila" />
+  <title>Iván & Camila | 20 de febrero de 2027</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="intro-active">
+
+  <div class="invitation-intro" id="invitationIntro" role="dialog" aria-modal="true" aria-label="Presentación de la invitación">
+    <div class="intro-monogram" aria-hidden="true">I <span>&</span> C</div>
+    <div class="intro-stage" aria-hidden="true">
+      <img class="roma roma-walking" src="img/roma-caminando.webp" alt="" />
+      <img class="roma roma-front" src="img/roma-frente.webp" alt="" />
+    </div>
+    <div class="intro-finale">
+      <p>Roma tiene algo especial para ti</p>
+      <button class="btn btn-intro" id="abrirInvitacion" type="button">Ver invitación</button>
+    </div>
+  </div>
+
+  <audio id="musica" loop preload="auto">
+    <source src="music/cancion.mp3" type="audio/mpeg">
+  </audio>
+
+  <header class="hero" id="inicio">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content reveal">
+      <p class="eyebrow">Nos casamos</p>
+      <h1>Iván <span>&</span> Camila</h1>
+      <p class="fecha-principal">20 · 02 · 2027</p>
+      <p class="frase-portada">“Mejores son dos que uno...”</p>
+      <p class="cita">Eclesiastés 4:9</p>
+
+      <div class="hero-buttons">
+        <a href="#contador" class="btn btn-primary">Ver invitación</a>
+        <button id="btnMusica" class="btn btn-outline" type="button">♫ Reproducir música</button>
+      </div>
+    </div>
+
+    <a class="scroll-indicator" href="#contador" aria-label="Bajar">
+      <span></span>
+    </a>
+  </header>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="#inicio" class="brand">I & C</a>
+      <div class="nav-links">
+        <a href="#historia">Historia</a>
+        <a href="#ceremonia">Ceremonia</a>
+        <a href="#galeria">Galería</a>
+        <a href="#confirmacion">Confirmar</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="section countdown-section" id="contador">
+      <div class="container reveal">
+        <p class="section-kicker">La cuenta regresiva comenzó</p>
+        <h2>Falta muy poco</h2>
+
+        <img class="roma-vignette reveal" src="img/roma-contador-transparente.webp" alt="Roma junto a un reloj y un calendario de matrimonio" loading="lazy" />
+
+        <div class="countdown" aria-label="Cuenta regresiva">
+          <div class="countdown-box">
+            <strong id="dias">000</strong>
+            <span>Días</span>
+          </div>
+          <div class="countdown-box">
+            <strong id="horas">00</strong>
+            <span>Horas</span>
+          </div>
+          <div class="countdown-box">
+            <strong id="minutos">00</strong>
+            <span>Minutos</span>
+          </div>
+          <div class="countdown-box">
+            <strong id="segundos">00</strong>
+            <span>Segundos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light-section" id="historia">
+      <div class="container split-layout">
+        <div class="image-card reveal">
+          <img src="img/nosotros1.jpg" alt="Iván y Camila" />
+        </div>
+
+        <div class="text-block reveal">
+          <p class="section-kicker">Nuestra historia</p>
+          <h2>Un camino que elegimos recorrer juntos</h2>
+          <p>
+            Después de compartir tantos momentos, aprendizajes, desafíos y alegrías,
+            hemos decidido dar un nuevo paso en nuestra historia.
+          </p>
+          <p>
+            Queremos celebrar este día junto a las personas que han sido parte de
+            nuestro camino y que ocupan un lugar especial en nuestras vidas.
+          </p>
+          <p class="signature">Iván & Camila</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section details-section" id="ceremonia">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Dónde y cuándo</p>
+          <h2>Acompáñanos en este día</h2>
+        </div>
+
+        <img class="roma-vignette reveal" src="img/roma-ceremonia-transparente.webp" alt="Roma como portadora de los anillos de matrimonio" loading="lazy" />
+
+        <div class="event-grid">
+          <article class="event-card reveal">
+            <div class="event-icon">⛪</div>
+            <p class="event-label">Ceremonia religiosa</p>
+            <h3>Parroquia María Peregrina</h3>
+            <p class="event-time">16:45 horas</p>
+            <p class="event-address">Linares, Región del Maule</p>
+            <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=Parroquia+Maria+Peregrina+Linares" target="_blank" rel="noopener">
+              Ver ubicación
+            </a>
+          </article>
+
+          <article class="event-card reveal">
+            <div class="event-icon">🥂</div>
+            <p class="event-label">Civil y celebración</p>
+            <h3>Centro de Eventos Los Encinos</h3>
+            <p class="event-time">18:00 horas</p>
+            <p class="event-address">Linares, Región del Maule</p>
+            <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=Centro+de+Eventos+Los+Encinos+Linares" target="_blank" rel="noopener">
+              Ver ubicación
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quote-section">
+      <div class="quote-overlay"></div>
+      <div class="container reveal">
+        <p class="large-quote">
+          “Y si alguno prevaleciere contra uno, dos le resistirán; y cordón de tres
+          dobleces no se rompe pronto.”
+        </p>
+        <p class="quote-source">Eclesiastés 4:12</p>
+      </div>
+    </section>
+
+    <section class="section light-section" id="vestimenta">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Código de vestimenta</p>
+          <h2>Formal</h2>
+          <p>Queremos que te sientas cómodo, elegante y listo para celebrar.</p>
+        </div>
+
+        <img class="roma-vignette reveal" src="img/roma-vestuario-transparente.webp" alt="Roma con una elegante tenida blanca de matrimonio" loading="lazy" />
+
+        <div class="dress-grid">
+          <div class="dress-card reveal">
+            <div class="dress-icon">🤵</div>
+            <h3>Caballeros</h3>
+            <p>Traje formal o tenida elegante.</p>
+          </div>
+
+          <div class="dress-card reveal">
+            <div class="dress-icon">👗</div>
+            <h3>Damas</h3>
+            <p>Vestido largo, corto elegante o conjunto formal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="galeria">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Nuestros recuerdos</p>
+          <h2>Galería</h2>
+        </div>
+
+        <img class="roma-vignette reveal" src="img/roma-galeria-transparente.webp" alt="Roma junto a una cámara fotográfica antigua" loading="lazy" />
+
+        <div class="gallery-grid">
+          <button class="gallery-item reveal" type="button">
+            <img src="img/nosotros1.jpg" alt="Fotografía 1 de Iván y Camila" />
+          </button>
+          <button class="gallery-item reveal" type="button">
+            <img src="img/nosotros2.jpg" alt="Fotografía 2 de Iván y Camila" />
+          </button>
+          <button class="gallery-item reveal" type="button">
+            <img src="img/nosotros3.jpg" alt="Fotografía 3 de Iván y Camila" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rsvp-section" id="confirmacion">
+      <div class="container narrow reveal">
+        <p class="section-kicker">Confirmación de asistencia</p>
+        <h2>Esperamos contar contigo</h2>
+        <p>
+          Por favor confirma tu asistencia antes de la fecha indicada por los novios.
+        </p>
+
+        <img class="roma-vignette reveal" src="img/roma-rsvp-transparente.webp" alt="Roma revisando el libro de invitados" loading="lazy" />
+
+        <a
+          class="btn btn-primary btn-large"
+          href="https://forms.google.com"
+          target="_blank"
+          rel="noopener"
+        >
+          Confirmar asistencia
+        </a>
+
+        <p class="small-note">
+          Reemplaza este enlace por el de tu Google Forms.
+        </p>
+      </div>
+    </section>
+
+    <section class="section gift-section" id="regalos">
+      <div class="container narrow reveal">
+        <div class="gift-icon">🎁</div>
+        <p class="section-kicker">Regalos</p>
+        <h2>Tu presencia es nuestro mejor regalo</h2>
+        <p>
+          Si desean hacernos un regalo, preparamos una pequeña lista de deseos y
+          regalos simbólicos para acompañarnos en esta nueva etapa.
+        </p>
+
+        <img class="roma-vignette reveal" src="img/roma-regalos-transparente.webp" alt="Roma contando monedas junto a sobres de regalo" loading="lazy" />
+
+        <!-- Regalos provisionales: puedes editar directamente el nombre, descripción y precio de cada tarjeta -->
+        <div class="symbolic-gifts">
+          <div class="gift-options-grid">
+            <a class="gift-option" href="#datosTransferencia" aria-label="Elegir brindis de recién casados y ver datos de transferencia">
+              <span class="gift-option-icon" aria-hidden="true">🥂</span>
+              <h4>Brindis de recién casados</h4>
+              <p>Una copa especial para celebrar nuestro comienzo.</p>
+              <strong>$25.000</strong>
+              <span class="gift-option-action">Ver datos de transferencia →</span>
+            </a>
+
+            <a class="gift-option" href="#datosTransferencia" aria-label="Elegir desayuno de luna de miel y ver datos de transferencia">
+              <span class="gift-option-icon" aria-hidden="true">☕</span>
+              <h4>Desayuno de luna de miel</h4>
+              <p>Un desayuno tranquilo para comenzar una nueva aventura.</p>
+              <strong>$35.000</strong>
+              <span class="gift-option-action">Ver datos de transferencia →</span>
+            </a>
+
+            <a class="gift-option" href="#datosTransferencia" aria-label="Elegir cena romántica y ver datos de transferencia">
+              <span class="gift-option-icon" aria-hidden="true">🍽️</span>
+              <h4>Cena romántica</h4>
+              <p>Una velada para recordar durante nuestra luna de miel.</p>
+              <strong>$60.000</strong>
+              <span class="gift-option-action">Ver datos de transferencia →</span>
+            </a>
+
+            <a class="gift-option" href="#datosTransferencia" aria-label="Elegir excursión para dos y ver datos de transferencia">
+              <span class="gift-option-icon" aria-hidden="true">🗺️</span>
+              <h4>Excursión para dos</h4>
+              <p>Una experiencia para conocer juntos un nuevo lugar.</p>
+              <strong>$85.000</strong>
+              <span class="gift-option-action">Ver datos de transferencia →</span>
+            </a>
+
+            <a class="gift-option" href="#datosTransferencia" aria-label="Elegir noche de alojamiento y ver datos de transferencia">
+              <span class="gift-option-icon" aria-hidden="true">🏨</span>
+              <h4>Noche de alojamiento</h4>
+              <p>Una noche especial dentro de nuestro viaje.</p>
+              <strong>$120.000</strong>
+              <span class="gift-option-action">Ver datos de transferencia →</span>
+            </a>
+
+            <a class="gift-option" href="#datosTransferencia" aria-label="Elegir aporte a nuestra aventura y ver datos de transferencia">
+              <span class="gift-option-icon" aria-hidden="true">💌</span>
+              <h4>Aporte a nuestra aventura</h4>
+              <p>Un aporte simbólico para nuestros primeros recuerdos.</p>
+              <strong>$20.000</strong>
+              <span class="gift-option-action">Ver datos de transferencia →</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="transfer-intro">
+          <p class="section-kicker">Cómo regalar</p>
+          <h3>Datos de transferencia</h3>
+          <p>
+            Puedes escoger cualquiera de los regalos simbólicos anteriores y transferir
+            su monto —o el valor que prefieras— utilizando los siguientes datos.
+          </p>
+        </div>
+
+        <div class="bank-card" id="datosTransferencia" tabindex="-1">
+          <div class="bank-card-heading">
+            <span>Transferencia bancaria</span>
+            <span class="bank-card-mark" aria-hidden="true">I & C</span>
+          </div>
+          <p data-copy="Nombre: IVAN PABLO NUNEZ CORNEJO"><strong>Nombre:</strong> IVAN PABLO NUNEZ CORNEJO</p>
+          <p data-copy="RUT: 18894934-7"><strong>RUT:</strong> 18894934-7</p>
+          <p data-copy="Banco: Banco Estado"><strong>Banco:</strong> Banco Estado</p>
+          <p data-copy="Tipo de cuenta: CuentaRUT"><strong>Tipo de cuenta:</strong> CuentaRUT</p>
+          <p data-copy="Número de cuenta: 18894934"><strong>Número de cuenta:</strong> 18894934</p>
+          <button class="btn btn-copy" id="copiarDatos" type="button">
+            <span aria-hidden="true">⧉</span> Copiar datos
+          </button>
+          <p class="copy-feedback" id="copyFeedback" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>20 de febrero de 2027</p>
+    <h2>Iván & Camila</h2>
+    <p>Los esperamos para celebrar juntos.</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="cerrarLightbox" type="button" aria-label="Cerrar">×</button>
+    <img id="imagenLightbox" src="" alt="Imagen ampliada" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

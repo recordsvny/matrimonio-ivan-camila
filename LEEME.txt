@@ -1,0 +1,46 @@
+PÁGINA DE MATRIMONIO - IVÁN Y CAMILA
+
+ESTRUCTURA DE ARCHIVOS
+
+Matrimonio-Ivan-Camila/
+│
+├── index.html
+├── styles.css
+├── script.js
+├── img/
+│   ├── portada.jpg
+│   ├── nosotros1.jpg
+│   ├── nosotros2.jpg
+│   ├── nosotros3.jpg
+│   └── fondo.jpg
+└── music/
+    └── cancion.mp3
+
+IMPORTANTE
+
+1. No cambies los nombres de los archivos.
+2. Reemplaza las imágenes de ejemplo por tus propias fotografías.
+3. Usa fotografías JPG.
+4. El archivo portada.jpg debe ser horizontal o vertical con buena resolución.
+5. nosotros1.jpg, nosotros2.jpg y nosotros3.jpg son las fotos de la galería.
+6. fondo.jpg se usa detrás de la frase bíblica.
+7. cancion.mp3 es opcional.
+
+CAMBIOS NECESARIOS EN INDEX.HTML
+
+- Busca https://forms.google.com y reemplázalo por el enlace real de tu Google Forms.
+- Completa los datos bancarios en la sección Regalos.
+- Revisa las ubicaciones de Google Maps.
+
+CÓMO PUBLICAR EN NETLIFY
+
+1. Descomprime el archivo ZIP.
+2. Entra a Netlify y crea una cuenta.
+3. Busca la opción para desplegar manualmente un sitio.
+4. Arrastra la carpeta Matrimonio-Ivan-Camila completa.
+5. Netlify generará un enlace público.
+6. Puedes cambiar el nombre del sitio desde la configuración.
+
+PRUEBA LOCAL
+
+Abre index.html con Google Chrome o Microsoft Edge.
