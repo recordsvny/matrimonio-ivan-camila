@@ -1176,7 +1176,12 @@ footer p {
 
 @media (max-width: 520px) {
   .invitation-intro { padding: 18px; }
-  .intro-stage { height: 52vh; width: 112vw; }
+  .intro-stage {
+    width: 100%;
+    max-width: 420px;
+    height: 52vh;
+    justify-self: center;
+  }
   .roma-walking { animation-name: romaWalkMobile; }
   .roma-front { animation-name: romaArrivesMobile; }
 
