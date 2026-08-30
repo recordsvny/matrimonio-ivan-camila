@@ -637,6 +637,11 @@ p {
   gap: 28px;
 }
 
+.event-grid-single {
+  grid-template-columns: minmax(0, 680px);
+  justify-content: center;
+}
+
 .event-card,
 .dress-card {
   position: relative;
