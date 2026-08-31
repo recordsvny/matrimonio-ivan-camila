@@ -357,7 +357,7 @@ p {
   color: var(--white);
   text-align: center;
   background:
-    url("img/portada.jpg") center/cover no-repeat,
+    url("img/portada-ilustrada.webp") center/cover no-repeat,
     linear-gradient(135deg, #4a4039, #1f1c1a);
 }
 
@@ -715,7 +715,7 @@ p {
   color: var(--white);
   text-align: center;
   background:
-    url("img/fondo.jpg") center/cover fixed no-repeat,
+    url("img/fondo-ilustrado.webp") center/cover fixed no-repeat,
     linear-gradient(135deg, #4b413a, #24211f);
 }
 
@@ -758,6 +758,42 @@ p {
   background: var(--cream);
 }
 
+.color-restriction {
+  grid-column: 1 / -1;
+  max-width: 780px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.color-restriction p {
+  max-width: 610px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.reserved-colors {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 22px;
+  flex-wrap: wrap;
+}
+
+.color-swatch {
+  min-width: 105px;
+  padding: 10px 14px;
+  border: 1px solid rgba(94, 70, 56, .14);
+  border-radius: 999px;
+  color: var(--brown);
+  font-size: .78rem;
+  font-weight: 600;
+  letter-spacing: .05em;
+}
+
+.swatch-pink { background: #e9b7c4; }
+.swatch-white { background: #fff; }
+.swatch-beige { background: #dfceb5; }
+
 /* =========================
    GALERÍA
 ========================= */
@@ -773,6 +809,7 @@ p {
 }
 
 .gallery-item {
+  position: relative;
   padding: 0;
   overflow: hidden;
   border: 0;
@@ -790,6 +827,22 @@ p {
 
 .gallery-item:hover img {
   transform: scale(1.05);
+}
+
+.gallery-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  padding: 42px 14px 16px;
+  color: white;
+  background: linear-gradient(to top, rgba(38, 29, 25, .84), transparent);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.55rem;
+  font-weight: 600;
+  letter-spacing: .02em;
+  text-align: center;
 }
 
 /* =========================
@@ -900,6 +953,18 @@ p {
   grid-column: 1 / -1;
   width: 100%;
   margin-top: 38px;
+}
+
+.gift-transfer-message {
+  grid-column: 1 / -1;
+  max-width: 720px;
+  margin: 28px auto 0;
+  padding: 18px 22px;
+  border: 1px solid rgba(183, 152, 98, .26);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, .58);
+  color: #6f625b;
+  text-align: center;
 }
 
 .transfer-intro {

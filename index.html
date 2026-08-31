@@ -95,7 +95,7 @@
     <section class="section light-section" id="historia">
       <div class="container split-layout">
         <div class="image-card reveal">
-          <img src="img/nosotros1.jpg" alt="Iván y Camila" />
+          <img src="img/historia-ilustrada.webp" alt="Iván y Camila vestidos de novios frente a una puesta de sol" loading="lazy" />
         </div>
 
         <div class="text-block reveal">
@@ -172,6 +172,21 @@
             <h3>Damas</h3>
             <p>Vestido largo, corto elegante o conjunto formal.</p>
           </div>
+
+          <div class="dress-card color-restriction reveal">
+            <div class="dress-icon">🎨</div>
+            <h3>Colores reservados para los novios</h3>
+            <p>
+              Para que los novios puedan lucir sus colores especiales en este día,
+              agradecemos evitar rosado, blanco y beige, incluyendo todas sus gamas,
+              tonalidades y derivados.
+            </p>
+            <div class="reserved-colors" aria-label="Colores reservados: rosado, blanco y beige">
+              <span class="color-swatch swatch-pink">Rosado</span>
+              <span class="color-swatch swatch-white">Blanco</span>
+              <span class="color-swatch swatch-beige">Beige</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -186,14 +201,17 @@
         <img class="roma-vignette reveal" src="img/roma-galeria-transparente.webp" alt="Roma junto a una cámara fotográfica antigua" loading="lazy" />
 
         <div class="gallery-grid">
-          <button class="gallery-item reveal" type="button">
-            <img src="img/nosotros1.jpg" alt="Fotografía 1 de Iván y Camila" />
+          <button class="gallery-item reveal" type="button" aria-label="Ampliar recuerdo: Primer beso">
+            <img src="img/recuerdo-primer-beso.webp" alt="Ilustración del primer beso de Iván y Camila" loading="lazy" />
+            <span class="gallery-caption">Primer beso</span>
           </button>
-          <button class="gallery-item reveal" type="button">
-            <img src="img/nosotros2.jpg" alt="Fotografía 2 de Iván y Camila" />
+          <button class="gallery-item reveal" type="button" aria-label="Ampliar recuerdo: Propuesta de matrimonio">
+            <img src="img/recuerdo-propuesta.webp" alt="Ilustración de la propuesta de matrimonio de Iván y Camila" loading="lazy" />
+            <span class="gallery-caption">Propuesta de matrimonio</span>
           </button>
-          <button class="gallery-item reveal" type="button">
-            <img src="img/nosotros3.jpg" alt="Fotografía 3 de Iván y Camila" />
+          <button class="gallery-item reveal" type="button" aria-label="Ampliar recuerdo: Familia perruna">
+            <img src="img/recuerdo-familia-perruna.webp" alt="Ilustración de Iván, Camila y Roma como familia perruna" loading="lazy" />
+            <span class="gallery-caption">Familia perruna</span>
           </button>
         </div>
       </div>
@@ -204,6 +222,11 @@
         <p class="section-kicker">Confirmación de asistencia</p>
         <h2>Esperamos contar contigo</h2>
         <p>
+          Esta invitación es válida para una persona. Hemos elegido una celebración
+          íntima y valoramos profundamente a cada persona a quien invitamos a compartir
+          este momento con nosotros.
+        </p>
+        <p>
           Por favor confirma tu asistencia antes de la fecha indicada por los novios.
         </p>
 
@@ -211,7 +234,7 @@
 
         <a
           class="btn btn-primary btn-large"
-          href="https://forms.google.com"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeOefT4IIcXJA7UMZxHmIHdqdtXu9czdIract-PVI066nXfwQ/viewform"
           target="_blank"
           rel="noopener"
         >
@@ -219,7 +242,7 @@
         </a>
 
         <p class="small-note">
-          Reemplaza este enlace por el de tu Google Forms.
+          El formulario también permite informar opcionalmente cualquier restricción alimentaria.
         </p>
       </div>
     </section>
@@ -236,54 +259,52 @@
 
         <img class="roma-vignette reveal" src="img/roma-regalos-transparente.webp" alt="Roma contando monedas junto a sobres de regalo" loading="lazy" />
 
-        <!-- Regalos provisionales: puedes editar directamente el nombre, descripción y precio de cada tarjeta -->
+        <p class="gift-transfer-message">
+          Puedes escoger cualquiera de los regalos simbólicos siguientes y transferir
+          su monto —o el valor que prefieras— utilizando los datos que encontrarás más abajo.
+        </p>
+
         <div class="symbolic-gifts">
           <div class="gift-options-grid">
-            <a class="gift-option" href="#datosTransferencia" aria-label="Elegir brindis de recién casados y ver datos de transferencia">
-              <span class="gift-option-icon" aria-hidden="true">🥂</span>
-              <h4>Brindis de recién casados</h4>
-              <p>Una copa especial para celebrar nuestro comienzo.</p>
-              <strong>$25.000</strong>
-              <span class="gift-option-action">Ver datos de transferencia →</span>
-            </a>
-
-            <a class="gift-option" href="#datosTransferencia" aria-label="Elegir desayuno de luna de miel y ver datos de transferencia">
-              <span class="gift-option-icon" aria-hidden="true">☕</span>
-              <h4>Desayuno de luna de miel</h4>
-              <p>Un desayuno tranquilo para comenzar una nueva aventura.</p>
-              <strong>$35.000</strong>
-              <span class="gift-option-action">Ver datos de transferencia →</span>
-            </a>
-
-            <a class="gift-option" href="#datosTransferencia" aria-label="Elegir cena romántica y ver datos de transferencia">
-              <span class="gift-option-icon" aria-hidden="true">🍽️</span>
-              <h4>Cena romántica</h4>
-              <p>Una velada para recordar durante nuestra luna de miel.</p>
-              <strong>$60.000</strong>
-              <span class="gift-option-action">Ver datos de transferencia →</span>
-            </a>
-
-            <a class="gift-option" href="#datosTransferencia" aria-label="Elegir excursión para dos y ver datos de transferencia">
-              <span class="gift-option-icon" aria-hidden="true">🗺️</span>
-              <h4>Excursión para dos</h4>
-              <p>Una experiencia para conocer juntos un nuevo lugar.</p>
-              <strong>$85.000</strong>
-              <span class="gift-option-action">Ver datos de transferencia →</span>
-            </a>
-
-            <a class="gift-option" href="#datosTransferencia" aria-label="Elegir noche de alojamiento y ver datos de transferencia">
-              <span class="gift-option-icon" aria-hidden="true">🏨</span>
-              <h4>Noche de alojamiento</h4>
-              <p>Una noche especial dentro de nuestro viaje.</p>
+            <a class="gift-option" href="#datosTransferencia" aria-label="Elegir felicidad y prosperidad para la familia Núñez Hormazábal">
+              <span class="gift-option-icon" aria-hidden="true">✨</span>
+              <h4>Felicidad y prosperidad para la familia Núñez Hormazábal</h4>
               <strong>$120.000</strong>
               <span class="gift-option-action">Ver datos de transferencia →</span>
             </a>
 
-            <a class="gift-option" href="#datosTransferencia" aria-label="Elegir aporte a nuestra aventura y ver datos de transferencia">
-              <span class="gift-option-icon" aria-hidden="true">💌</span>
-              <h4>Aporte a nuestra aventura</h4>
-              <p>Un aporte simbólico para nuestros primeros recuerdos.</p>
+            <a class="gift-option" href="#datosTransferencia" aria-label="Elegir SkinCare o asado en la playa">
+              <span class="gift-option-icon" aria-hidden="true">🏖️</span>
+              <h4>SkinCare / Asado en la playa</h4>
+              <strong>$30.000</strong>
+              <span class="gift-option-action">Ver datos de transferencia →</span>
+            </a>
+
+            <a class="gift-option" href="#datosTransferencia" aria-label="Elegir vida infinita para Roma">
+              <span class="gift-option-icon" aria-hidden="true">🐾</span>
+              <h4>Vida infinita para Roma</h4>
               <strong>$20.000</strong>
+              <span class="gift-option-action">Ver datos de transferencia →</span>
+            </a>
+
+            <a class="gift-option" href="#datosTransferencia" aria-label="Elegir ropa deportiva para gimnasio o pádel">
+              <span class="gift-option-icon" aria-hidden="true">🎾</span>
+              <h4>Ropa deportiva Gym / Pádel</h4>
+              <strong>$40.000</strong>
+              <span class="gift-option-action">Ver datos de transferencia →</span>
+            </a>
+
+            <a class="gift-option" href="#datosTransferencia" aria-label="Elegir Meet and Greet con Denisse Rosenthal o Agustín Tapia">
+              <span class="gift-option-icon" aria-hidden="true">🎟️</span>
+              <h4>Meet &amp; Greet con Denisse Rosenthal / Agustín Tapia</h4>
+              <strong>$80.000</strong>
+              <span class="gift-option-action">Ver datos de transferencia →</span>
+            </a>
+
+            <a class="gift-option" href="#datosTransferencia" aria-label="Elegir luna de miel en Dubái con Roma">
+              <span class="gift-option-icon" aria-hidden="true">✈️</span>
+              <h4>Luna de miel en Dubái con Roma</h4>
+              <strong>$100.000</strong>
               <span class="gift-option-action">Ver datos de transferencia →</span>
             </a>
           </div>
@@ -292,10 +313,6 @@
         <div class="transfer-intro">
           <p class="section-kicker">Cómo regalar</p>
           <h3>Datos de transferencia</h3>
-          <p>
-            Puedes escoger cualquiera de los regalos simbólicos anteriores y transferir
-            su monto —o el valor que prefieras— utilizando los siguientes datos.
-          </p>
         </div>
 
         <div class="bank-card" id="datosTransferencia" tabindex="-1">
