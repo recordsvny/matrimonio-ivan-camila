@@ -357,7 +357,7 @@ p {
   color: var(--white);
   text-align: center;
   background:
-    url("img/portada-ilustrada.webp") center/cover no-repeat,
+    url("img/portada-ilustrada-semirecogido.webp") center/cover no-repeat,
     linear-gradient(135deg, #4a4039, #1f1c1a);
 }
 
@@ -373,6 +373,13 @@ p {
   position: relative;
   z-index: 2;
   width: min(900px, calc(100% - 32px));
+}
+
+.hero .eyebrow {
+  color: var(--white);
+  font-size: clamp(1rem, 2vw, 1.35rem);
+  letter-spacing: .3em;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, .55);
 }
 
 .hero h1 {
@@ -758,8 +765,20 @@ p {
   background: var(--cream);
 }
 
+.dress-card h3 {
+  margin: .55rem 0 1rem;
+  font-size: clamp(1.55rem, 2.6vw, 2rem);
+  line-height: 1.12;
+}
+
+.dress-card p {
+  font-size: clamp(1.05rem, 1.5vw, 1.2rem);
+  line-height: 1.7;
+}
+
 .color-restriction,
-.celebration-note {
+.celebration-note,
+.party-note {
   grid-column: 1 / -1;
   max-width: 780px;
   width: 100%;
@@ -767,7 +786,8 @@ p {
 }
 
 .color-restriction p,
-.celebration-note p {
+.celebration-note p,
+.party-note p {
   max-width: 610px;
   margin-right: auto;
   margin-left: auto;
@@ -776,6 +796,11 @@ p {
 .celebration-note {
   background:
     linear-gradient(135deg, rgba(255, 255, 255, .82), rgba(246, 238, 226, .88));
+}
+
+.party-note {
+  background:
+    linear-gradient(135deg, rgba(248, 239, 232, .92), rgba(255, 250, 244, .88));
 }
 
 .celebration-thanks {
